@@ -6,7 +6,7 @@
 }
 
 .header h1{
-    font-size: 1.2rem;
+    font-size: 2rem;
     margin: 0rem;
     font-weight: 600;
 
@@ -20,12 +20,40 @@
 
 }
 .link{
-    font-size: 0.8rem;
-    color: var(--grey);
+    font-size: 1.2rem;
+    color: var(--white);
     font-weight: 600;
+    padding-left: 0.5rem ;
+    
+}
+
+.Drawer-component{    /*By-default the drawer will not pop out*/
+    display: none;
 }
 
 .link:hover{
-    color: var(--white);
+    color: var(--blue);
+
     transform: all 0.3s;
 }
+@media only screen and (max-width:800px){  /*This will adjust the screen when it become smaller than 800px*/
+    .links{
+        display:none;
+    }
+    .Drawer-component{
+        /* background-color: rgb(94, 6, 6);
+        border-radius: 3rem; */
+        display:block;
+        
+    }
+    .header{
+        padding:1.5rem;
+    }
+    .drawer-div{
+        background-color:rgb(71, 8, 32);
+        height: 200vw;
+        padding: 0.75rem;
+
+    }
+}
+  

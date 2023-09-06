@@ -1,12 +1,13 @@
 import React from "react";
 import Button from "../Button";
 import './styles.css';
+import TemporaryDrawer from "./Drawer";
 
 function Header(){
     return(
     <div className="header">
     <h1>
-        CryptoTracker<span style={{color:"var(--blue)" }}>.</span>
+        CryptoTracker<span style={{color:"var(--red)" }}>.</span>
     </h1>
     <div className="links">
         <a href="/">
@@ -23,6 +24,9 @@ function Header(){
         </a>
 
     </div>
+     <div className="Drawer-component">
+      <TemporaryDrawer />
+      </div>
     </div>
     );
         
